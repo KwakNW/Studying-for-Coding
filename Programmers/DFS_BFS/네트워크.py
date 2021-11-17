@@ -1,9 +1,8 @@
 def dfs(n, computers, start, visited):
     visited[start] = True
     for i in range(n):
-        if visited[i] == False and computers[start][i] == 1:
+        if visited[i] == False and computers[start][i] == 1: # 방문하지 않았을 때, 그리고 연결돼있을 때
             dfs(n, computers, i, visited)
-    return
 
 def solution(n, computers):
     visited = [False] * n
