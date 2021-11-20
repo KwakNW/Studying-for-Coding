@@ -19,7 +19,7 @@ def solution(phone_book):
 # 다른 사람의 풀이
 def solution(phoneBook):
     phoneBook = sorted(phoneBook)
-
+    # ZIP 함수를 통해 두 개씩 짝 맞추기 
     for p1, p2 in zip(phoneBook, phoneBook[1:]):
         if p2.startswith(p1):
             return False
